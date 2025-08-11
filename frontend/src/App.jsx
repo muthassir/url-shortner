@@ -6,7 +6,7 @@ export default function App() {
   const [longUrl, setLongUrl] = useState("");
   const [shortUrl, setShortUrl] = useState("");
   const [showAdmin, setShowAdmin] = useState(false);
-  const API =  "http://localhost:5000";
+  const API =  "https://url-shortner-t0v7.onrender.com";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

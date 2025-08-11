@@ -3,7 +3,8 @@ import axios from "axios";
 
 export default function AdminPage({ onBack }) {
   const [urls, setUrls] = useState([]);
-  const API = "http://localhost:5000";
+  // const API = "http://localhost:5000";
+  const API = "https://url-shortner-t0v7.onrender.com";
 
   useEffect(() => {
     const fetch = async () => {

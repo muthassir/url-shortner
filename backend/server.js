@@ -9,6 +9,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors());
+// app.use(cors({ origin: "*" }));
 app.use(express.json());
 
 // Connect DB
@@ -21,7 +22,7 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB connected"))
   .catch((err) => { console.error(err); process.exit(1); });
 
-const BASE_URL = process.env.BASE_URL || "http://localhost:5000";
+const BASE_URL = process.env.BASE_URL || "https://url-shortner-t0v7.onrender.com";
 
 // shorten URL endpoin
 app.post("/api/shorten", async (req, res) => {
