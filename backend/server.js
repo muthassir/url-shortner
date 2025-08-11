@@ -22,7 +22,7 @@ mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log("MongoDB connected"))
   .catch((err) => { console.error(err); process.exit(1); });
 
-const BASE_URL = process.env.BASE_URL || "https://url-shortner-t0v7.onrender.com";
+const BASE_URL = 'https://url-shortner-0grk.onrender.com' ;
 
 // shorten URL endpoin
 app.post("/api/shorten", async (req, res) => {
